@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <title>ZORVA — Wear Your Identity</title>
+  <meta name="description" content="Discover everyday streetwear and essentials at ZORVA.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">ZORVA — YOUR STYLE. YOUR RULES.</div>
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="ZORVA home">ZORVA<span>®</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="nav">
+      <a href="#shop">SHOP</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a>
+    </nav>
+    <button class="cart-button" id="cartOpen" aria-label="Open shopping cart">BAG (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE EVERYDAY UNIFORM</p>
+        <h1>OWN<br><span>YOUR</span><br>VIBE.</h1>
+        <p class="hero-text">Clean essentials. Bold energy. Built for the way you move.</p>
+        <a class="button button-light" href="#shop">SHOP THE DROP <span>↗</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Abstract black and white streetwear campaign artwork">
+        <div class="art-circle"></div><div class="art-line"></div>
+        <span class="art-label">Z / 001</span><span class="art-big">ZORVA</span>
+        <span class="art-caption">FORM FOLLOWS FEELING<br>EST. YOUR ERA</span>
+      </div>
+      <div class="hero-bottom"><span>DESIGNED FOR EVERYDAY</span><span>01 — 04</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Brand message"><div>LESS NOISE · MORE STYLE · LESS NOISE · MORE STYLE · LESS NOISE · MORE STYLE ·</div></section>
+
+    <section class="shop section" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2>Latest <em>drop.</em></h2></div><p>Easy staples. Everyday rotation.</p></div>
+      <div class="filters" role="group" aria-label="Filter products">
+        <button class="filter active" data-filter="All">ALL</button>
+        <button class="filter" data-filter="Tops">TOPS</button>
+        <button class="filter" data-filter="Bottoms">BOTTOMS</button>
+        <button class="filter" data-filter="Accessories">ACCESSORIES</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="demo-note">Demo catalogue: replace sample items, prices and images before accepting real orders.</p>
+    </section>
+
+    <section class="manifesto" id="about">
+      <p class="eyebrow">OUR POINT OF VIEW</p>
+      <h2>Style isn't<br>a <em>permission.</em></h2>
+      <p>It's how you show up. ZORVA is a concept streetwear store built around simple silhouettes, everyday comfort and a confident point of view.</p>
+      <a href="#shop" class="text-link">FIND YOUR FIT ↗</a>
+    </section>
+
+    <section class="newsletter section" id="contact">
+      <div><p class="eyebrow">STAY IN THE LOOP</p><h2>Good things<br>are <em>dropping.</em></h2></div>
+      <form id="newsletterForm"><label for="email">Get updates when the next drop lands.</label><div class="email-row"><input id="email" type="email" placeholder="Your email address" required><button class="button button-light" type="submit">JOIN ↗</button></div><small id="newsletterMessage">Demo only — this form doesn't store or send emails yet.</small></form>
+    </section>
+  </main>
+
+  <footer><a class="wordmark" href="#">ZORVA<span>®</span></a><p>WEAR YOUR IDENTITY.</p><span>© <span id="year"></span> ZORVA. DEMO STORE.</span></footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head"><h2>Your bag <span id="cartTitleCount">(0)</span></h2><button id="cartClose" aria-label="Close cart">✕</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><strong id="subtotal">₹0</strong></div><p>Shipping and final order confirmation are not included in this demo.</p><button id="checkoutButton" class="button button-light full">CONTINUE TO ORDER</button><small id="checkoutMessage">Checkout is demo-only. No payment is collected.</small></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
